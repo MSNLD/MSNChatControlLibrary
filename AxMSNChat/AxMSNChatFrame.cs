@@ -12,6 +12,7 @@ namespace AxMSNChat
   public class AxMSNChatFrame : AxHost
   {
     private IChatFrame ocx;
+    public event EventHandler ControlReady;
 
     public AxMSNChatFrame()
       : base("f58e1cef-a068-4c15-ba5e-587caf3ee8c6")
@@ -623,7 +624,9 @@ namespace AxMSNChat
     {
       try
       {
+        base.AttachInterfaces();
         this.ocx = (IChatFrame) this.GetOcx();
+        ControlReady?.Invoke(this, EventArgs.Empty);
       }
       catch (Exception)
       {

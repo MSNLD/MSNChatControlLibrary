@@ -12,6 +12,7 @@ namespace AxMSNChat
   public class AxChatSettings : AxHost
   {
     private IChatSettings ocx;
+    public event EventHandler ControlReady;
 
     public AxChatSettings()
       : base("fa980e7e-9e44-4d2f-b3c2-9a5be42525f8")
@@ -92,7 +93,9 @@ namespace AxMSNChat
     {
       try
       {
+        base.AttachInterfaces();
         this.ocx = (IChatSettings) this.GetOcx();
+        ControlReady?.Invoke(this, EventArgs.Empty);
       }
       catch (Exception)
       {
