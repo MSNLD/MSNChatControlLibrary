@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 namespace AxMSNChat
 {
+  [DesignerCategory("Code")]
   [AxHost.Clsid("{fa980e7e-9e44-4d2f-b3c2-9a5be42525f8}")]
   [DesignTimeVisible(true)]
   public class AxChatSettings : AxHost

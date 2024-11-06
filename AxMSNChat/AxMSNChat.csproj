@@ -39,12 +39,8 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AxMSNChatFrame.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="AxChatSettings.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="AxMSNChatFrame.cs" />
+    <Compile Include="AxChatSettings.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,11 +48,6 @@
       <Project>{d5126c97-13c3-4188-a771-b6c4535656cd}</Project>
       <Name>MSNChat</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="AxChatSettings.resx">
-      <DependentUpon>AxChatSettings.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

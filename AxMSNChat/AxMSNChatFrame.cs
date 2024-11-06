@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 namespace AxMSNChat
 {
+  [DesignerCategory("Code")]
   [DesignTimeVisible(true)]
   [AxHost.Clsid("{f58e1cef-a068-4c15-ba5e-587caf3ee8c6}")]
   public class AxMSNChatFrame : AxHost
