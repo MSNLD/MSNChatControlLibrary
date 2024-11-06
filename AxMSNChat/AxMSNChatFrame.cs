@@ -625,7 +625,7 @@ namespace AxMSNChat
       {
         this.ocx = (IChatFrame) this.GetOcx();
       }
-      catch (Exception ex)
+      catch (Exception)
       {
       }
     }

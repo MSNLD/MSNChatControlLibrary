@@ -94,7 +94,7 @@ namespace AxMSNChat
       {
         this.ocx = (IChatSettings) this.GetOcx();
       }
-      catch (Exception ex)
+      catch (Exception)
       {
       }
     }

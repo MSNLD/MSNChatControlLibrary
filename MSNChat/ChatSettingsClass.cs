@@ -9,9 +9,6 @@ namespace MSNChat
   [ComImport]
   public class ChatSettingsClass : IChatSettings, ChatSettings
   {
-    //[MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
-    //public extern ChatSettingsClass();
-
     [DispId(-501)]
     [ComAliasName("stdole.OLE_COLOR")]
     public virtual extern uint BackColor { [DispId(-501), MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)] [param: ComAliasName("stdole.OLE_COLOR"), In] set; [DispId(-501), MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)] [return: ComAliasName("stdole.OLE_COLOR")] get; }
